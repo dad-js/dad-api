@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"lib": ["es2021"],
+		"target": "es2017",
+		"module": "Node16",
+		"strict": true,
+		"esModuleInterop": true,
+		"moduleResolution": "Node16",
+		"declaration": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"outDir": "./dist",
+		"rootDir": "./src"
+	},
+	"exclude": ["node_modules", "dist", "plugins", "z"]
+}

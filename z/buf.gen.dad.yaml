@@ -1,0 +1,8 @@
+# Learn more: https://buf.build/docs/configuration/v2/buf-gen-yaml
+version: v2
+inputs:
+    - directory: proto
+plugins:
+    - local: ["tsx", "./plugins/protoc-gen-dad.ts"]
+      out: src/generated
+      opt: target=ts

@@ -1,0 +1,58 @@
+{
+	"name": "@dad-js/dad-api",
+	"version": "0.0.1",
+	"description": "Auto-generated Dark and Darker API",
+	"exports": {
+		"./pb": "./dist/generated/pb/index.js",
+		".": "./dist/index.js"
+	},
+	"typesVersions": {
+		"*": {
+			"pb": [
+				"dist/generated/pb/index.d.ts"
+			],
+			"*": [
+				"dist/index.d.ts"
+			]
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "z build --full",
+		"postinstall": "npm i -g zman"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/dad-js/dad-api.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/dad-js/dad-api/issues"
+	},
+	"homepage": "https://github.com/dad-js/dad-api/dad-api#readme",
+	"publishConfig": {
+		"@dad-js:registry": "https://npm.pkg.github.com"
+	},
+	"devDependencies": {
+		"@bufbuild/buf": "^1.37.0",
+		"@bufbuild/protoc-gen-es": "^2.0.0",
+		"@bufbuild/protoplugin": "^2.0.0",
+		"@types/node": "^22.4.0",
+		"change-case-all": "^2.1.0",
+		"dotenv-cli": "^7.4.2",
+		"rimraf": "^6.0.1",
+		"steamworks.js": "^0.4.0",
+		"ts-morph": "^23.0.0",
+		"tsc-watch": "^6.2.0",
+		"tsx": "^4.17.0",
+		"typescript": "^5.5.4",
+		"zman": "^0.4.4"
+	},
+	"dependencies": {
+		"@bufbuild/protobuf": "^2.0.0"
+	}
+}
