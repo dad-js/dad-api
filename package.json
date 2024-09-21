@@ -1,6 +1,6 @@
 {
 	"name": "@dad-js/dad-api",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Auto-generated Dark and Darker API",
 	"exports": {
 		"./pb": "./dist/generated/pb/index.js",
