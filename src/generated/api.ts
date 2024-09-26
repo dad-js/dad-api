@@ -1,6 +1,6 @@
 import type { ISocket } from "../libs/socket";
 import { BaseAPI } from "../libs/baseapi";
-import { ItemModule, CharacterModule, AccountModule, AgentModule, CharacterClassModule, ChatModule, CommonModule, CustomizeModule, DediServerModule, FriendModule, GatheringHallModule, GmModule, InGameModule, InventoryModule, IronMaceModule, KarmaModule, LobbyModule, MarketPlaceModule, MerchantModule, OperateModule, PartyModule, RankingModule, ReligionModule, ShopModule, TradeModule, DefinsModule, PacketCommandModule, RewardModule } from "./modules";
+import { ItemModule, CharacterModule, AccountModule, AgentModule, CharacterClassModule, ChatModule, CommonModule, CustomizeModule, DediServerModule, FriendModule, GatheringHallModule, GmModule, InGameModule, InventoryModule, IronMaceModule, LobbyModule, MarketPlaceModule, MerchantModule, OperateModule, PartyModule, RankingModule, ReligionModule, ShopModule, TradeModule, DefinsModule, PacketCommandModule, RewardModule } from "./modules";
 
 export class API extends BaseAPI {
     readonly item: ItemModule;
@@ -18,7 +18,6 @@ export class API extends BaseAPI {
     readonly inGame: InGameModule;
     readonly inventory: InventoryModule;
     readonly ironMace: IronMaceModule;
-    readonly karma: KarmaModule;
     readonly lobby: LobbyModule;
     readonly marketPlace: MarketPlaceModule;
     readonly merchant: MerchantModule;
@@ -49,7 +48,6 @@ export class API extends BaseAPI {
         this.inGame = new InGameModule(socket);
         this.inventory = new InventoryModule(socket);
         this.ironMace = new IronMaceModule(socket);
-        this.karma = new KarmaModule(socket);
         this.lobby = new LobbyModule(socket);
         this.marketPlace = new MarketPlaceModule(socket);
         this.merchant = new MerchantModule(socket);

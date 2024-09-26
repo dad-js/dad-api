@@ -13,7 +13,6 @@ export * from "./gm";
 export * from "./inGame";
 export * from "./inventory";
 export * from "./ironMace";
-export * from "./karma";
 export * from "./lobby";
 export * from "./marketPlace";
 export * from "./merchant";

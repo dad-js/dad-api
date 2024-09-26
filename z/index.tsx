@@ -11,6 +11,7 @@ import {
 	PNPM,
 	NPX,
 	Watch,
+	Log,
 	Download,
 } from "zman";
 import { Protodump } from "./bindings/protodump";
@@ -18,10 +19,14 @@ import { resolve } from "path";
 
 const { cmd } = z("dad-api", meta.app.version);
 
-const getUrl = async () => {
-	const buildVersion = await (
+const getBuildVersion = async () => {
+	return await (
 		await fetch("http://cdn.darkanddarker.com/Dark%20and%20Darker/Build/BuildVersion.txt")
 	).text();
+};
+
+const getUrl = async () => {
+	const buildVersion = await getBuildVersion();
 	return `http://cdn.darkanddarker.com/Dark%20and%20Darker/Build/Patch/${buildVersion.trim()}/DungeonCrawler/Binaries/Win64/DungeonCrawler.exe`;
 };
 
@@ -63,6 +68,7 @@ const Build = async (opts: { full?: boolean }) => (
 		<Task name="build typescript">
 			<TSC />
 		</Task>
+		<Log>Build Finished!</Log>
 	</Series>
 );
 cmd("build").opt("boolean", "full").action(Build);

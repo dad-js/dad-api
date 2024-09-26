@@ -384,16 +384,6 @@ import { SC2S_INVENTORY_EXPAND_STORAGE_REQSchema } from "./pb/Inventory_pb";
 import type { InventoryExpandStorageReq } from "./modules/inventory";
 import { SS2C_INVENTORY_EXPAND_STORAGE_RESSchema } from "./pb/Inventory_pb";
 import type { InventoryExpandStorageRes } from "./modules/inventory";
-import { SC2S_KARMA_REPORT_LIST_REQSchema } from "./pb/Karma_pb";
-import type { KarmaReportListReq } from "./modules/karma";
-import { SS2C_KARMA_REPORT_LIST_RESSchema } from "./pb/Karma_pb";
-import type { KarmaReportListRes } from "./modules/karma";
-import { SC2S_KARMA_REPORT_ACTION_REQSchema } from "./pb/Karma_pb";
-import type { KarmaReportActionReq } from "./modules/karma";
-import { SS2C_KARMA_REPORT_ACTION_RESSchema } from "./pb/Karma_pb";
-import type { KarmaReportActionRes } from "./modules/karma";
-import { SS2C_KARMA_RATING_UPDATE_NOTSchema } from "./pb/Karma_pb";
-import type { KarmaRatingUpdateNot } from "./modules/karma";
 import { SC2S_CHARACTER_SELECT_ENTER_REQSchema } from "./pb/Lobby_pb";
 import type { CharacterSelectEnterReq } from "./modules/lobby";
 import { SS2C_CHARACTER_SELECT_ENTER_RESSchema } from "./pb/Lobby_pb";
@@ -1965,11 +1955,6 @@ export const packetNameToSchemaMap = {
     S2C_STORAGE_INFO_RES: SS2C_STORAGE_INFO_RESSchema,
     C2S_INVENTORY_EXPAND_STORAGE_REQ: SC2S_INVENTORY_EXPAND_STORAGE_REQSchema,
     S2C_INVENTORY_EXPAND_STORAGE_RES: SS2C_INVENTORY_EXPAND_STORAGE_RESSchema,
-    C2S_KARMA_REPORT_LIST_REQ: SC2S_KARMA_REPORT_LIST_REQSchema,
-    S2C_KARMA_REPORT_LIST_RES: SS2C_KARMA_REPORT_LIST_RESSchema,
-    C2S_KARMA_REPORT_ACTION_REQ: SC2S_KARMA_REPORT_ACTION_REQSchema,
-    S2C_KARMA_REPORT_ACTION_RES: SS2C_KARMA_REPORT_ACTION_RESSchema,
-    S2C_KARMA_RATING_UPDATE_NOT: SS2C_KARMA_RATING_UPDATE_NOTSchema,
     C2S_CHARACTER_SELECT_ENTER_REQ: SC2S_CHARACTER_SELECT_ENTER_REQSchema,
     S2C_CHARACTER_SELECT_ENTER_RES: SS2C_CHARACTER_SELECT_ENTER_RESSchema,
     C2S_LOBBY_CHARACTER_INFO_REQ: SC2S_LOBBY_CHARACTER_INFO_REQSchema,
@@ -2393,11 +2378,6 @@ export interface PacketPayloads {
     S2C_STORAGE_INFO_RES: StorageInfoRes;
     C2S_INVENTORY_EXPAND_STORAGE_REQ: InventoryExpandStorageReq;
     S2C_INVENTORY_EXPAND_STORAGE_RES: InventoryExpandStorageRes;
-    C2S_KARMA_REPORT_LIST_REQ: KarmaReportListReq;
-    S2C_KARMA_REPORT_LIST_RES: KarmaReportListRes;
-    C2S_KARMA_REPORT_ACTION_REQ: KarmaReportActionReq;
-    S2C_KARMA_REPORT_ACTION_RES: KarmaReportActionRes;
-    S2C_KARMA_RATING_UPDATE_NOT: KarmaRatingUpdateNot;
     C2S_CHARACTER_SELECT_ENTER_REQ: CharacterSelectEnterReq;
     S2C_CHARACTER_SELECT_ENTER_RES: CharacterSelectEnterRes;
     C2S_LOBBY_CHARACTER_INFO_REQ: LobbyCharacterInfoReq;

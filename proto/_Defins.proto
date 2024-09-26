@@ -386,6 +386,7 @@ message Operate {
     POLICY_ARENA_NO_SQUIRE_ACCESS = 60;
     POLICY_MATCHING_ITEM_RARITY_TYPE_ARENA = 61;
     POLICY_RANDOM_MATCHMAKING_ON_OFF_ARENA_TYPE = 62;
+    POLICY_ARENA_ENTRY_LIMIT_LEVEL = 63;
   }
 
 }
@@ -518,6 +519,7 @@ message Define_Reward {
     Stash = 10;
     ArmorSkin = 11;
     RewardToken = 12;
+    LegendaryStatus = 13;
   }
 
 }

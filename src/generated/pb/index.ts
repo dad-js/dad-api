@@ -13,7 +13,6 @@ export * from "./Gm_pb";
 export * from "./InGame_pb";
 export * from "./Inventory_pb";
 export * from "./IronMace_pb";
-export * from "./Karma_pb";
 export * from "./Lobby_pb";
 export * from "./MarketPlace_pb";
 export * from "./Merchant_pb";
